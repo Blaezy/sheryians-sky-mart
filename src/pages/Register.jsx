@@ -21,7 +21,7 @@ const Register = () => {
     data = {
       ...data,
       id: generateId(),
-      imageUrl: `https://ui-avatars.com/api/?name=${currentUser.fullName}&background=0ea5e9&color=fff&size=256`,
+      imageUrl: `https://ui-avatars.com/api/?name=${encodeURIComponent(data.fullName)}&background=0ea5e9&color=fff&size=256`,
       phone: "",
       location: "",
       bio: "",
