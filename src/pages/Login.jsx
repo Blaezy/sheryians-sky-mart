@@ -40,7 +40,7 @@ const Login = () => {
           <p className='text-neutral-400 mt-2 text-sm'>Log in to your account</p>
         </div>
 
-        <form onClick={handleSubmit(formSubmit)} className='space-y-5'>
+        <form onClick={()=>{handleSubmit(formSubmit)}} className='space-y-5'>
           <div>
             <label className='block text-sm font-medium text-neutral-300 mb-1'>Email</label>
             <input
