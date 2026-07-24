@@ -14,7 +14,7 @@ const stats = [
 const About = () => {
   return (
     <div className='flex flex-col gap-16 py-12 text-white'>
-      {/* Hero */}
+      
       <section className='flex flex-col gap-5'>
         <span className='inline-flex w-fit items-center rounded-full border border-sky-400/40 bg-sky-400/10 px-3 py-1 text-xs font-semibold tracking-wide text-sky-400'>
           OUR STORY
@@ -42,7 +42,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Stats */}
+    
       <section className='grid grid-cols-2 gap-4 md:grid-cols-4'>
         {stats.map((stat) => (
           <div key={stat.label} className='rounded-2xl border border-neutral-800 bg-neutral-900 px-6 py-6 text-center'>
@@ -52,7 +52,7 @@ const About = () => {
         ))}
       </section>
 
-      {/* Story */}
+   
       <section className='flex flex-col gap-6 md:flex-row md:items-center md:gap-12'>
         <div className='relative h-64 w-full overflow-hidden rounded-2xl border border-neutral-800 bg-neutral-900 md:h-80 md:w-2/5'>
           <img
@@ -74,11 +74,11 @@ const About = () => {
         </div>
       </section>
 
-      {/* Values */}
+     
       <ValueCard/>
       
 
-      {/* CTA banner */}
+   
       <section className='flex flex-col items-center gap-4 rounded-2xl border border-neutral-800 bg-neutral-900 px-8 py-12 text-center'>
         <h2 className='text-2xl font-bold md:text-3xl'>Ready to shop smarter?</h2>
         <p className='max-w-md text-sm text-neutral-400'>

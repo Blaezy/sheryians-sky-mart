@@ -34,7 +34,7 @@ const slides = [
   },
 ];
 
-const SLIDE_DURATION = 7000; // 7s, sits inside your 6-8s ask
+const SLIDE_DURATION = 7000;
 
 const HeroCard = () => {
   const navigate = useNavigate();
@@ -55,7 +55,6 @@ const HeroCard = () => {
       >
         {slides.map((slide, i) => (
           <div key={i} className='flex w-full shrink-0 flex-col md:flex-row md:h-[460px]'>
-            {/* Left: detail */}
             <div className='flex flex-col items-start justify-center gap-3 px-8 py-8 md:px-10 md:w-[35%]'>
               <span className='inline-flex w-fit items-center rounded-full border border-sky-400/40 bg-sky-400/10 px-3 py-1 text-xs font-semibold tracking-wide text-sky-400'>
                 {slide.badge}
@@ -75,7 +74,6 @@ const HeroCard = () => {
               </button>
             </div>
 
-            {/* Right: image blended into the card bg */}
             <div className='relative hidden md:block md:w-[65%]'>
               <img src={slide.image} alt={slide.title} className='h-full w-full object-cover' />
               <div className='absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-neutral-900 to-transparent' />
@@ -84,7 +82,6 @@ const HeroCard = () => {
         ))}
       </div>
 
-      {/* Dots — also clickable */}
       <div className='absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2'>
         {slides.map((_, i) => (
           <button

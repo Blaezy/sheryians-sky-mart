@@ -61,7 +61,7 @@ const ProductDetails = () => {
 
   return (
     <div className='text-white px-6 py-8 max-w-6xl mx-auto'>
-      {/* Breadcrumb */}
+     
       <div className='flex items-center gap-2 text-sm text-neutral-500 mb-8'>
         <NavLink to='/products' className='hover:text-sky-400'>
           Products
@@ -75,7 +75,7 @@ const ProductDetails = () => {
       </div>
 
       <div className='grid grid-cols-1 md:grid-cols-2 gap-10'>
-        {/* Image */}
+       
         <div className='relative bg-neutral-900 border border-neutral-800 rounded-2xl overflow-hidden'>
           <button
             onClick={toggleWishlist}
@@ -90,7 +90,7 @@ const ProductDetails = () => {
           <img src={product.thumbnail} alt={product.title} className='w-full h-full object-cover aspect-square' />
         </div>
 
-        {/* Info */}
+    
         <div className='flex flex-col gap-5'>
           <h1 className='text-2xl md:text-3xl font-bold'>{product.title}</h1>
 
@@ -146,7 +146,7 @@ const ProductDetails = () => {
         </div>
       </div>
 
-      {/* Related Products */}
+      
       {relatedProducts.length > 0 && (
         <div className='mt-16'>
           <div className='flex items-center justify-between mb-5'>

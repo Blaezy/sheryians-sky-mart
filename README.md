@@ -77,4 +77,4 @@ Deployed on [Vercel](https://vercel.com). Includes a `vercel.json` rewrite rule 
 
 ## Author
 
-Built by [Blaezy](https://github.com/Blaezy) as part of ongoing full-stack development practice (Sheryians Coding School Cohort 3.0).
+Built by [Blaezy](https://github.com/Blaezy) as part of ongoing full-stack development practice at Sheryians Coding School Cohort 3.0

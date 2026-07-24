@@ -33,12 +33,10 @@ export default function Navbar() {
   return (
     <div className='w-full bg-black text-white relative'>
       <div className='max-w-7xl mx-auto flex items-center justify-between px-6 py-5'>
-        {/* Hamburger - mobile only */}
         <button onClick={() => setMenuOpen(!menuOpen)} className='md:hidden text-white' aria-label='Open menu'>
           {menuOpen ? <X className='h-6 w-6' /> : <Menu className='h-6 w-6' />}
         </button>
 
-        {/* Logo */}
         <div className='flex items-center gap-2 cursor-pointer'>
           <NavLink to={"/"}>
             <h1 className='text-3xl font-bold text-white'>
@@ -47,7 +45,6 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        {/* Nav links - desktop only */}
         <div className='hidden md:flex items-center gap-8 text-sm font-medium'>
           <NavLink to={"/"} className='hover:opacity-60 transition-opacity cursor-pointer'>
             Home
@@ -63,7 +60,6 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        {/* Right side */}
         <div className='flex items-center gap-6'>
           <div className='hidden sm:flex items-center gap-2 text-sm'>
             <img
@@ -94,7 +90,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {menuOpen && (
         <div className='md:hidden border-t border-neutral-800 bg-black px-6 py-4'>
           <div className='flex items-center gap-3 pb-4 mb-2 border-b border-neutral-800'>
