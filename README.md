@@ -2,6 +2,8 @@
 
 A full-stack style e-commerce web app built with React, Tailwind CSS, and Context API — featuring authentication, product browsing, wishlist, and cart, all persisted with localStorage.
 
+🔗 **Live Demo:** [sheryians-sky-mart.vercel.app](https://sheryians-sky-mart.vercel.app/)
+
 ## Features
 
 - **Authentication** — Register/Login with form validation (react-hook-form), protected routes
