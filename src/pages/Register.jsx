@@ -56,7 +56,7 @@ const Register = () => {
           <p className='text-neutral-400 mt-2 text-sm'>Create your account</p>
         </div>
 
-        <form onSubmit={()=>{handleSubmit(formSubmit)}} className='space-y-5'>
+        <form onSubmit={handleSubmit(formSubmit)} className='space-y-5'>
           <div>
             <label className='block text-sm font-medium text-neutral-300 mb-1'>Full Name</label>
             <input
